@@ -1,3 +1,41 @@
-.mp4 filter=lfs diff=lfs merge=lfs -text
-.jpg filter=lfs diff=lfs merge=lfs -text
-.png filter=lfs diff=lfs merge=lfs -text
+node_modules/
+
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+
+lib-cov/
+
+coverage/
+
+.nyc_output/
+
+.grunt/
+
+bower_components/
+
+dist/
+build/
+
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+.DS_Store
+Thumbs.db
