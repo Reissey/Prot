@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./schoolPortal.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <div>
+            <h6 id="UniName">Prototype International Schools</h6>
+        </div>
+        <nav id="navMenu">
+            <ul>
+                <a href="schoolPortal.html"><li>HOME</li></a>
+                <a href="registration.html"><li>REGISTRATION</li></a>
+                <a href="contact_us.html"><li>CONTACT US</li></a>
+                <a href="Login.html"><li>LOGIN</li></a>
+            </ul>
+        </nav>
+        <button id="menuToggle" aria-label="Toggle Menu">
+    <i class="fa-solid fa-bars"></i>
+</button>
+    </header>
+    <section>
+        <h3 id="wel">Welcome to Prototype International Schools<br><span id="emp"><em>"Shaping future leaders,Inspiring excellence"</em></span></h3>
+        <div>
+            <p id="ret">
+                Prototype International Schools Calabar is dedicated to providing a world class education in nurturing
+                and supportive environment.Our mission is to shape the leaders of tomorrow through a blend of
+                academic excellence,personal development and global awareness.With highly qualified teachers and
+                'state of the art facilities', we ensure each child reaches their full potential.
+            </p>
+        </div>
+        <div id="cold">
+            <section id="exp">
+                <h3 class="ehh" id="oik">10+</h3>
+                <span class="hsh">Years of Excellence</span>
+            </section>
+              <section id="exp">
+                <h3 class="ehh">300+</h3>
+                <span class="hsh">Happy Students</span>
+            </section>
+            <section id="exp" class="tbc">
+                <h3 class="ehh" id="oik">30+</h3>
+                <span class="hsh" >Expert teachers</span>
+            </section>
+        </div>
+    </section><hr class="frs">
+    <section>
+        <header class="tec">
+            Tailored education for every stage of growth 
+        </header>
+        <p class="fert">
+            From early childhood to secondary education,we provide comprehensive learning experiences
+            that nurture every aspect of your child's development.
+        </p>
+        <div id='schCls'>
+            <section>
+                <header>
+                    <i class="fa-solid fa-wand-magic-sparkles" id="greC"></i>
+                </header>
+                <span><strong class="iko">Creche & Nursery Section</strong></span>
+                <p id="sml">
+                    Our Creche and Nursery provide a safe and stimulating environment for the youngest learners to explore, grow,
+                    and build the foundations of their educational journey.
+                </p>
+            </section>
+           <section>
+                <header>
+                    <i class="fa-solid fa-star" id="redC"></i>
+                </header>
+                <span><strong class="iko">Primary Section (Grades 1-5)</strong></span>
+                <p id="sml">
+                    In the primary school, we nurture curiosity and creativity.
+                    Our Grade 1-5 curriculum is designed to build strong academic skills in literacy, numeracy, science, and the arts.
+                </p>
+           </section>
+            <section id="tbc">
+                <header>
+                    <i class="fa-solid fa-bolt" id="bluC"></i>
+                </header>
+                <span><strong class="iko">Secondary School (JSS1 - SSS3)</strong></span>
+                <p id="sml">
+                    Our secondary school equips students with the knowledge, skills, and confidence needed to excel in higher education and beyond.
+                </p>
+            </section>
+        </div>
+    </section>
+    <section>
+        <header class="tec">
+                Academic Excellence
+        </header>
+            <span>Building a strong academic Foudation</span>
+            <p id="trewq">
+                Prototype International School's curriculum is aligned with both national and international standards, ensuring that students receive a well-rounded education that prepares them for future success. Our dedicated teachers utilize modern teaching methods to engage students in Mathematics, English, Sciences, and the Humanities. 
+                With small class sizes, we offer personalized attention to every child, fostering academic excellence at every level.
+            </p>
+           <div id="schCls">
+            <section>
+                <header class='blx'>100+</header>
+                <p>Creche</p>
+            </section>
+            <section>
+                <header class='blx'>200+</header>
+                <p>Grade Pupils</p>
+            </section>
+            <section id="tbc">
+                <header class='blx'>400+</header>
+                <p>Secondary Students</p>
+            </section>
+        </section>
+        <section class="contact">
+  <header class="tec">Contact Us</header>
+  <p class="fert">
+    We'd love to hear from you. Reach out to us for admissions, inquiries, or support.
+  </p>
+
+  <div id="schCls">
+    <section>
+      <i class="fa-solid fa-location-dot"></i>
+      <span class="iko">Our Address</span>
+      <p id="sml">
+        12 Education Lane, Calabar, Cross River State
+      </p>
+    </section>
+
+    <section>
+      <i class="fa-solid fa-phone"></i>
+      <span class="iko">Call Us</span>
+      <p id="sml">
+        +234 812 345 6789<br>
+        +234 901 234 5678
+      </p>
+    </section>
+
+    <section>
+      <i class="fa-solid fa-envelope"></i>
+      <span class="iko">Email</span>
+      <p id="sml">
+        info@prtotypeschools.com
+      </p>
+    </section>
+  </div>
+</section>
+    </div>
+    <script>
+    const menuToggle = document.getElementById("menuToggle");
+    const navMenu = document.getElementById("navMenu");
+
+    menuToggle.addEventListener("click", () => {
+        navMenu.classList.toggle("active");
+    });
+</script>
+</body>
+</html>

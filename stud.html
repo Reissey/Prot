@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./stud.css"/>
+</head>
+<body>
+    <header>
+        <h3 id="ast">TEST NAME HIGH SCHOOL</h3>
+    </header>
+    <h3 id="welc">Welcome, <span id="fname"></span> <span id="lname"></span> to your student page</h3>
+    <p id="kin">Kindly select the data you want to fetch and put in your email.</p>
+    <form id="form">
+    <label for="year">Year:
+        <select name="year" id="year">
+        </select>
+        </label>
+        <label for="term">
+        Semester:
+        <select name="term" id="term">
+            <option value="1st Term">1st Term</option>
+            <option value="2nd Term">2nd Semester</option>
+            <option value="3rd Term">3rd Term</option>
+        </select>
+        </label> <br>
+            <label id="em">Email:
+        <input type="email" id="email" placeholder="Enter Email" required/>
+    </label><br>
+    <button type="submit" id="sub">Check Result</button><br>
+</form>
+<p id="inf"></p>
+<div id="aft">
+    <p>After submission of information,PDF download of your result will begin immediately.</p>
+<table>
+    <thead>
+        <tr>
+    <th id="tsub">Course</th>
+    <th id="tgrades">Grade</th>
+    <th id="tyear">Year</th>
+    <th id="tterm">Semester</th>
+        </tr>
+    </thead>
+    <tbody id="open"></tbody>
+</table>
+<div>
+    <p><strong>Pay your school fees here</strong> </p>
+    <form id="feeForm">
+        <label>
+            <input type='email' id='feeEmail' placeholder="Input your school registered email"/>
+        </label>
+        <label>
+            <select id="feeSelect">
+                <option value="primary 1">Primary 1</option>
+                <option value="primary 2">Primary 2</option>
+                <option value="primary 3">Primary 3</option>
+                <option value="primary 4">Primary 4</option>
+                <option value="primary 5">Primary 5</option>
+                <option value="primary 6">Primary 6</option>
+            </select>
+            <label>
+                <label>
+                    <select id="feeTerm">
+                        <option value="1st Term">1st Term</option>
+                        <option value="2nd Term">2nd Term</option>
+                        <option value="3rd Term">3rd Term</option>
+                    </select>
+                </label>
+        <button>Pay</button>
+        <span id="feeInfo"></span>
+    </form>
+</div>
+    <div>
+        <p id="doy">Do you want your school transcript? <a href="./transcript.html" target="_blank">Click Here</a></p>
+    </div>    
+</div>
+    <script src="https://js.paystack.co/v1/inline.js"></script>
+    <script src="./stud.js"></script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+{
+  "name": "sqltest",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^2.2.1",
+    "cors": "^2.8.5",
+    "ejs": "^3.1.10",
+    "express": "^4.21.1",
+    "express-session": "^1.18.1",
+    "json2csv": "^6.0.0-alpha.2",
+    "jsonwebtoken": "^9.0.2",
+    "memory-cache": "^0.2.0",
+    "multer": "^2.0.2",
+    "mysql": "^2.18.1",
+    "paystack": "^2.0.1",
+    "pdfkit": "^0.15.1",
+    "pg": "^8.13.1",
+    "socket.io": "^4.8.1",
+    "twilio": "^5.7.1",
+    "uuid": "^13.0.0"
+  }
+}
