@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./reg.css"/>
+</head>
+<body>
+    <header>
+    <div id="flex"> 
+        <nav>
+            <ul>
+                <a href="schoolPortal.html"><li>HOME</li></a>
+                <a href="registration.html"><li>REGISTRATION</li></a>
+                <a href="contact_us.html"><li>CONTACT US</li></a>                
+            </ul>
+        </nav>
+    </div>
+    </header>
+    <section>
+        <h3>Register</h3>
+        <form id="form">
+            <div id="flex_con">
+                <div id="din">
+                    <label for="FirstName">
+                        <input type="text" id="name" required placeholder="First Name:"/>
+                    </label>
+                    <label for="LastName">
+                        <input type="text" id="Lname" required placeholder="Last Name:"/>
+                    </label>
+                    <label for="age">
+                        <input type="number" id="numbe" required placeholder="Age:"/>
+                    </label>
+                    <label for="email">
+                        <input type="email" id="email" required placeholder="Email:"/>
+                    </label>
+                    <label for="password">
+                        <input type="password" id="password" placeholder="Password:" required/>
+                    </label>
+                    <label for="role">
+                        <input type="text" id="role" placeholder="Position in the School:" required/>
+                    </label>
+                    <label>
+                        <select id="selClass" >
+                            <option value="">Select Class</option>
+                            <option value="primary 1">Primary 1</option>
+                            <option value="primary 2">Primary 2</option>
+                            <option value="primary 3">Primary 3</option>
+                            <option value="primary 4">Primary 4</option>
+                            <option value="primary 5">Primary 5</option>
+                            <option value="primary 6">Primary 6</option>
+                        </select>
+                    </label>
+                    <label id="subj">
+                        <input type="text" id="subject" placeholder="Enter subject"/>
+                    </label>
+                            <p id="ret"></p>
+                            <p id="pump" style="display: none;">Fill in all fields.</p>
+                    <button type="submit">Submit</button>        
+                </div>
+            </div>
+        </form>
+        <p id="para" style="display: none;">Email is already used,try a new one</p>
+    </section>
+    <script src="./registration.js">
+    </script>
+</body>
+</html>

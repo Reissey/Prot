@@ -1,0 +1,187 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(to right, #f6f9fc, #e3efff);
+  color: #333;
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+/* Header */
+header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+header h4 {
+  font-size: 28px;
+  color: #1a1a1a;
+  font-weight: 600;
+}
+
+/* Welcome Message */
+#welc {
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #444;
+}
+
+form > p {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #555;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* Form Styling */
+form {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 16px;
+  max-width: 1000px;
+  margin: 0 auto;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  animation: fadeIn 1s ease;
+}
+#btnb{
+    width: 18%;
+    background-color: transparent;
+    color: black;
+    border: 1px solid black;
+}
+#flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+#sg{
+    width: 40%;
+    margin-left: 300px;
+}
+label {
+  flex: 1 1 45%;
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  color: #444;
+}
+
+input,
+select {
+  padding: 12px;
+  margin-top: 8px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 15px;
+  background-color: #fefefe;
+  transition: all 0.3s ease;
+}
+
+input:focus,
+select:focus {
+  border-color: #005bbb;
+  box-shadow: 0 0 5px rgba(0, 91, 187, 0.2);
+  outline: none;
+}
+
+/* Inline elements inside label */
+label p {
+  font-size: 13px;
+  margin-top: 8px;
+  color: #555;
+}
+
+label span {
+  color: red;
+  font-size: 13px;
+}
+
+/* Buttons */
+button {
+  padding: 14px;
+  font-size: 16px;
+  border-radius: 10px;
+  border: none;
+  font-weight: bold;
+  width: 100%;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background: white;
+  color: black;
+  border: 1px solid black;
+  transform: translateY(-3px);
+  animation: btnHover 1s infinite ease-in-out alternate;
+}
+
+/* Info Message */
+#info {
+  text-align: center;
+  margin-top: 1.5rem;
+  color: red;
+  font-size: 15px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes btnHover {
+  0% {
+    background-color: bisque;
+    color: gold;
+  }
+  50% {
+    background-color: transparent;
+    color: blue;
+  }
+  100% {
+    background-color: gold;
+    color: white;
+  }
+}
+
+/* Responsive Styling */
+@media screen and (max-width: 768px) {
+  #welc {
+    font-size: 20px;
+  }
+
+  form > p {
+    font-size: 14px;
+  }
+
+  #flex {
+    flex-direction: column;
+  }
+
+  label {
+    width: 100%;
+  }
+
+  button {
+    width: 100%;
+  }
+}

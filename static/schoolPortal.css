@@ -1,0 +1,316 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(to right, #f6f9fc, #e3efff);
+  color: #1f2937;
+  line-height: 1.6;
+}
+
+/* ================= HEADER ================= */
+header {
+  background: #ffffff;
+  padding: 20px 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+#UniName {
+  font-size: 26px;
+  font-weight: 700;
+  color: #1d4ed8;
+}
+
+nav ul {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+
+nav ul a {
+  text-decoration: none;
+  font-weight: 500;
+  color: #374151;
+  transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+nav ul a:hover {
+  color: #1d4ed8;
+  border-bottom: 2px solid #1d4ed8;
+}
+
+/* ================= HERO ================= */
+section:first-of-type {
+  padding: 80px 40px 40px;
+  text-align: center;
+}
+
+#wel {
+  font-size: 46px;
+  font-weight: 700;
+  color: #1d4ed8;
+  margin-bottom: 20px;
+}
+
+#emp {
+  display: block;
+  font-size: 22px;
+  font-weight: 400;
+  color: #475569;
+  margin-top: 10px;
+}
+
+#ret {
+  max-width: 900px;
+  margin: 0 auto;
+  font-size: 18px;
+  color: #374151;
+}
+
+/* ================= STATS ================= */
+#cold {
+  margin: 60px auto;
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 1000px;
+}
+
+#exp {
+  background: #ffffff;
+  padding: 30px 40px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  min-width: 220px;
+}
+
+.ehh {
+  font-size: 42px;
+  font-weight: 700;
+  color: #1d4ed8;
+}
+
+.hsh {
+  font-size: 16px;
+  color: #6b7280;
+}
+
+/* ================= DIVIDER ================= */
+.frs {
+  width: 80%;
+  margin: 70px auto;
+  border: none;
+  height: 1px;
+  background: #cbd5f5;
+}
+
+/* ================= PROGRAMS ================= */
+.tec {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color:blue
+}
+
+.fert {
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto 50px;
+  font-size: 18px;
+  color: #475569;
+}
+
+#schCls {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+  padding: 0 60px 80px;
+}
+
+#schCls section {
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 40px 30px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+#schCls section:hover {
+  transform: translateY(-8px);
+}
+
+i {
+  font-size: 34px;
+  margin-bottom: 20px;
+  color: #1d4ed8;
+}
+
+.iko {
+  display: block;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+#sml {
+  font-size: 15px;
+  color: #6b7280;
+}
+
+/* ================= ACADEMIC SECTION ================= */
+section:last-of-type {
+  padding: 80px 60px;
+  background: #ffffff;
+  margin-top: 60px;
+  box-shadow: 0 -10px 30px rgba(0,0,0,0.06);
+}
+
+section:last-of-type header {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+section:last-of-type span {
+  font-size: 18px;
+  color: #475569;
+}
+
+section:last-of-type p {
+  max-width: 900px;
+  margin-top: 20px;
+  color: #374151;
+}
+
+/* ================= NUMBERS ================= */
+section:last-of-type #schCls section header {
+  font-size: 34px;
+  font-weight: 700;
+  color: #1d4ed8;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 1024px) {
+  header {
+    padding: 20px 30px;
+  }
+
+  #schCls {
+    padding: 0 30px 60px;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  #wel {
+    font-size: 36px;
+  }
+
+  .tec {
+    font-size: 26px;
+  }
+
+  section:last-of-type {
+    padding: 60px 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  #wel {
+    font-size: 30px;
+  }
+
+  #emp {
+    font-size: 18px;
+  }
+
+  #ret {
+    font-size: 16px;
+  }
+
+  header {
+    padding: 15px 20px;
+  }
+
+  button {
+    width: 100%;
+  }
+}
+
+.contact {
+  background: #f8fafc;
+  padding-top: 60px;
+}
+
+.contact i {
+  color: #1d4ed8;
+}
+#trewq{
+  padding-bottom: 40px;
+}
+#tbc {
+  padding-bottom: 1000px;
+}
+.blx{
+  color:darkturquoise;
+  font-size: 35px;
+  font-weight: bolder;
+}
+
+#menuToggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    nav {
+        display: none;
+        width: 100%;
+        background-color: #fff;
+    }
+
+    nav ul {
+        flex-direction: column;
+        padding: 10px 0;
+    }
+
+    nav ul a {
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    nav.active {
+        display: block;
+    }
+
+    #menuToggle {
+        display: block;
+    }
+}

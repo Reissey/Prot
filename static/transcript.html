@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h2>TEST NAME HIGH SCHOOL</h2>
+    </header>
+    <p>Welcome <span id="fname"></span> below is your transcript</p>
+    <p>Submit email to begin automatic download of transcript</p>
+    <form id="form">
+        <input type="email" name="email" id="email" placeholder="email" required>
+        <button id="btn" type="submit">Submit</button>
+    </form>
+    <table id="tab">
+        <th id="thed">
+            
+        </th>
+    </table>
+    <script>
+        window.addEventListener('DOMContentLoaded',async()=>{
+        const fet=await fetch('loginStudent');
+        const dataFet=await fet.json();
+        const email=dataFet.email;
+        const fetchIt=await fetch(`getTranscript?email=${email}`);
+        const data=await fetchIt.blob();
+        const url=window.URL.createObjectURL(data);
+        const a=document.createElement('a');
+        a.href=url;
+        a.download=`transcript_${fname}_${email}.pdf`;
+        a.click();
+        a.remove();
+        window.URL.revokeObjectURL;
+        })
+    </script>
+</body>
+</html>

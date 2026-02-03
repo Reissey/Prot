@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Royal Jubilee Schools | Admin Panel</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./admin.css"/>
+</head>
+<body>
+
+  <header class="topbar">
+    <div>
+      <h3>Royal Jubilee Schools</h3>
+      <span>Administrative Dashboard</span>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <!-- Post Section -->
+    <section class="card">
+      <h4>Create Announcement</h4>
+      <form id="form">
+        <textarea id="spaw" placeholder="Write an important announcement for parents or staff..."></textarea>
+        <button type="submit">Publish Post</button>
+      </form>
+    </section>
+
+    <!-- Upload Section -->
+    <section class="card">
+      <h4>Upload Media</h4>
+      <form id="form2">
+        <p class="hint">Upload pictures, videos, or official documents</p>
+        <input type="file" id="fileInp" name="image"/>
+        <button type="submit">Upload File</button>
+      </form>
+    </section>
+
+    <!-- Fee Payment Table -->
+    <section class="card">
+      <div class="table-header">
+        <h4>School Fee Payment Records</h4>
+        <input type="search" id="sech" placeholder="Search payment..."/>
+      </div>
+
+      <div class="table-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Class</th>
+              <th>Term</th>
+              <th>Date</th>
+              <th>Year</th>
+              <th>Reference</th>
+              <th>Amount</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Dynamic rows -->
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="grid">
+      <div class="card">
+        <h4>Information Posted</h4>
+        <div id="iftp" class="empty"></div>
+      </div>
+
+      <div class="card">
+        <h4>Images</h4>
+        <div id="imtp" class="empty">No images uploaded</div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    © 2026 Royal Jubilee Schools. All Rights Reserved.
+  </footer>
+
+  <script src="./admin.js"></script>
+</body>
+</html>

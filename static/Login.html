@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./login.css"/>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <a href="schoolPortal.html"><li>HOME</li></a>
+                <a href="registration.html"><li>REGISTRATION</li></a>
+                <a href="contact_us.html"><li>CONTACT US</li></a>  
+                <a href="moreInfo.html"><li>MORE INFO</li></a>
+            </ul>
+        </nav>
+    </header>
+    <div id="sel">
+        <section id="welcome">
+            <h3 id="reic">Welcome, login to continue</h3>
+            <p id="para">This is a page where teachers and students login to input and view results respectively.<br>Input every
+                information used in your registration.If you have not registered <a href="./registration.html">Click here</a> to register.
+            </p>
+        </section>
+            <section id="form">
+                <form id='form'>
+                    <div id="flex_con">
+                        <div id="din">
+                            <label for="FirstName">
+                                <input type="text" name="FirstName" id="name" required placeholder="First Name:"/>
+                            </label>
+                            <label for="LastName">
+                                <input type="text" name="LastName" id="Lname" required placeholder="Last Name:"/>
+                            </label>
+                            <label for="age">          
+                                <input type="number" name="age" id="number" required placeholder="Age:"/>
+                            </label>
+                            <label for="email">
+                                <input type="email" name="email" id="email" required placeholder="Email:"/>
+                            </label>
+                            <label for="password">
+                                <input type="password" name="password" id="password" placeholder="Password:"/>
+                            </label>
+                            <label for="role">
+                                <input type="text" name="role" id="role" placeholder="Enter your position:"/>
+                            </label>
+                            <label id="subj">
+                                <input type="text" id="subject" placeholder="Enter Suject" name="subject"/>
+                            </label>
+                            <button type="submit">Submit</button><br>        
+                            <span id='informationAA'></span>
+                        </div>
+                    </div>
+                </form> 
+            </section>        
+    </div>
+    <script src="./login.js">
+    </script>
+</body>
+</html>
